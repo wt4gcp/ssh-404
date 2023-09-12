@@ -15,23 +15,38 @@ none='\e[0m'
 # Check Root
 [[ $EUID -ne 0 ]] && echo -e "${red}Error: ${plain} You must use root user to run this script!\n" && exit 1
 
-sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_834/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
+sed -i 's/#\?AllowTcpForwarding .*/AllowTcpForwarding yes/' /etc/ssh/sshd_config && sed -i 's/#\?PasswordAuthentication .*/PasswordAuthentication yes/' /etc/ssh/sshd_config && sed -i 's/#\?Banner .*/Banner \/etc\/ssh\/gcp_404/' /etc/ssh/sshd_config && /etc/init.d/ssh restart;
 echo "
-<h3><font color='white'>▬▬▬▬▬▬MYANMAR▬▬▬▬▬▬
+<h3><font color='red'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
+</font></h3>
+<h3><font color='magenta'>--- ۩ PREMIUM SERVER ۩ ---
 </font></h3>
 
-<h3><font color='yellow'>--- ۩ GOOGLE SERVER ۩ ---
+<h3><font color='green'>--- ۩ SERVER BY ④ ⍤⃝🌻④ ۩ ---
 </font></h3>
 
-<h3><font color='green'>--- ۩ SERVER BY KOK834 ۩ ---
-</font></h3>
-
-<h4><font color='red'>--- ۩ https://t.me/KOKHANT834 ۩ ---
+<h4><font color='cyan'>Telegram Channel >> https://t.me/Pmttg
 </font></h4>
 
-<h3><font color='white'>▬▬▬▬▬▬BURMESE▬▬▬▬▬▬
-</font></h3>" | tee /etc/ssh/gcp_834 >/dev/null
-useradd "kok834" --shell=/bin/false -M
-echo "kok834:kok834" | chpasswd
+<h4><font color='blue'>Telegram Channel >> https://t.me/nkka_404
+</font></h4>
 
+<h3><font color='red'>▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬
+</font></h3>" | tee /etc/ssh/gcp_404 >/dev/null
+useradd "404" --shell=/bin/false -M
+echo "404:404" | chpasswd
 
+echo ""
+
+echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
+echo -e "${cyan} ___   ___          ________          ___   ___                               ${plain}"
+echo -e "${cyan}|\  \ |\  \        |\   __  \        |\  \ |\  \                              ${plain}"
+echo -e "${cyan}\ \  \|_\  \       \ \  \|\  \       \ \  \|_\  \                             ${plain}"
+echo -e "${cyan} \ \______  \       \ \  \/\  \       \ \______  \                            ${plain}"
+echo -e "${cyan}  \|_____|\  \       \ \  \/\  \       \|_____|\  \                           ${plain}"
+echo -e "${cyan}         \ \__\       \ \_______\             \ \__\                          ${plain}"
+echo -e "${cyan}          \|__|        \|_______|              \|__|                          ${plain}"
+echo -e "${green}Contact the developer https://t.me/nkka404 for more information              ${plain}"
+echo -e "${yellow}▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬ ${plain}"
+
+echo -e "${cyan}i am 404 😎 ${plain}"
